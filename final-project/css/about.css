@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 120px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: auto;
+    float: right;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+.about {
+  background-color: #4286f4;
+}
+
+.about-header {
+    max-width: 75%;
+    padding: 10px 0;
+    margin: auto;
+}
+
+header, section {
+  padding: 50px;
+}
+
+.bio {
+  max-width: 50%;
+  font-weight: bold;
+  margin: auto;
+}
+
+.footer {
+  background-color: #e1e4ea;
+  margin: auto;
+  padding: 15px 10px;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+}
