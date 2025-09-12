@@ -3,290 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebecca Refoy - Modern Portfolio</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom CSS for Inter font and some base styles -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Light blue-gray background */
-            color: #334155; /* Dark slate text */
-        }
-        /* Smooth scroll for navigation */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>Rebecca Refoy - Personal Portfolio</title>
+    <link rel="stylesheet" href="https://designsystem.digital.gov/assets/uswds/css/uswds.min.css">
+    <script src="https://designsystem.digital.gov/assets/uswds/js/uswds-init.min.js"></script>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-8 shadow-lg">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">Rebecca Refoy</h1>
-                <p class="text-xl md:text-2xl font-light opacity-90">Strategic Product & Portfolio Leader</p>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <div class="usa-overlay"></div>
+    <header class="usa-header usa-header--basic">
+        <div class="usa-nav-container">
+            <div class="usa-navbar">
+                <div class="usa-logo" id="basic-logo">
+                    <em class="usa-logo__text"><a href="#" title="Home" aria-label="Home">Rebecca Refoy</a></em>
+                </div>
+                <button class="usa-menu-btn">Menu</button>
             </div>
-            <nav class="flex space-x-6 md:space-x-8 text-lg font-medium">
-                <a href="#about" class="hover:text-blue-200 transition duration-300 ease-in-out">About</a>
-                <a href="#experience" class="hover:text-blue-200 transition duration-300 ease-in-out">Experience</a>
-                <a href="#education" class="hover:text-blue-200 transition duration-300 ease-in-out">Education & Training</a>
-                <a href="#skills" class="hover:text-blue-200 transition duration-300 ease-in-out">Skills & Tools</a>
-                <a href="#contact" class="hover:text-blue-200 transition duration-300 ease-in-out">Contact</a>
+            <nav aria-label="Primary navigation" class="usa-nav">
+                <button class="usa-nav__close"><img src="https://designsystem.digital.gov/assets/uswds/img/close.svg" role="img" alt="Close"></button>
+                <ul class="usa-nav__primary usa-accordion">
+                    <li class="usa-nav__primary-item">
+                        <a class="usa-nav__link" href="#about"><span>About</span></a>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                        <a class="usa-nav__link" href="#experience"><span>Experience</span></a>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                        <a class="usa-nav__link" href="#skills"><span>Skills & Tools</span></a>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                        <a class="usa-nav__link" href="#contact"><span>Contact</span></a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Main Content Area -->
-    <main class="container mx-auto px-4 py-12">
-
-        <!-- About Section -->
-        <section id="about" class="mb-16 bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Summary</h2>
-            <p class="text-lg leading-relaxed text-gray-700">
-                Strategic product and portfolio leader with 10+ years of experience translating complex business needs into actionable strategies and roadmaps across highly regulated environments. Adept at defining business architecture, facilitating cross-functional collaboration, and solving complex enterprise challenges. Proven ability to lead product teams in delivering innovative, user-centered solutions aligned with executive vision and industry best practices. Trusted advisor to senior leadership with a strong track record of fostering high-performing teams and aligning technology investments with strategic business priorities. Winner of GSA’s Customer Experience Award in 2024 for my contributions to IRS Direct File.
-            </p>
-            <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition duration-300 ease-in-out shadow-md hover:shadow-lg">
-                    Get in Touch
-                </a>
-                <!-- You can replace this with a link to your actual resume PDF -->
-                <a href="path/to/your/resume.pdf" download class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-300 transition duration-300 ease-in-out shadow-md hover:shadow-lg">
-                    Download Resume
-                </a>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="mb-16 bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Experience</h2>
-
-            <!-- Experience Item: 18F - Digital Transformation Program Lead -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Digital Transformation Program Lead</h3>
-                <p class="text-lg text-gray-600">18F | December 2014 - April 2025</p>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li class="mb-1">Led business development efforts, including scoping, drafting statements of work, and partner engagement to ensure successful project setup and delivery.</li>
-                    <li class="mb-1">Expanded portfolios by identifying growth opportunities within existing projects and relationships; managed budgets up to $10M; delivered on time and within scope.</li>
-                    <li class="mb-1">Conducted discovery and “build vs. buy” analysis for passport adjudication modernization, securing $3M in follow-on work in 2024.</li>
-                    <li class="mb-1">Translated complex business needs into product requirements through stakeholder workshops, aligning solutions with user needs and agency priorities.</li>
-                    <li class="mb-1">Modernized legacy systems using cloud frameworks, strategic planning, and business intelligence informed by user feedback.</li>
-                    <li class="mb-1">Developed strategic and execution plans aligning operations with business goals, using human-centered design and plain language to drive adoption.</li>
-                    <li class="mb-1">Designed and implemented success metrics using qualitative and quantitative methods; applied HCD research standards to validate outcomes.</li>
-                    <li class="mb-1">Analyzed six months of billing data and conducted interviews to justify increased project support costs, improving supervisor billing metrics.</li>
-                    <li class="mb-1">Managed a cross-functional product team of 10–15, providing strategic guidance, mentorship, and performance oversight to foster innovation and rigor.</li>
-                    <li class="mb-1">Served as lead client liaison, delivering insights and facilitating C-level decisions through executive briefings and data-driven strategy.</li>
-                    <li class="mb-1">Directed planning and execution across 10+ concurrent projects, ensuring visibility, risk management, and timely delivery of critical milestones.</li>
-                </ul>
-            </div>
-
-            <!-- Experience Item: 18F on behalf of the IRS - Project lead and delivery manager -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Project Lead and Delivery Manager</h3>
-                <p class="text-lg text-gray-600">18F on behalf of the IRS | June 2023 - March 2024</p>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li class="mb-1">Collaborated to launch the first-ever tax filing preparation system both built and run by the IRS, serving over 140,000 users in pilot year; increasing trust in the IRS by over 80% in a survey of users.</li>
-                    <li class="mb-1">Served as delivery manager on Direct File for customer support piloting cloud-based chat software used for the first time with taxpayers in tax year 2023.</li>
-                    <li class="mb-1">Led delivery strategy for customer support team aligning product goals across two different software products and 7 product teams.</li>
-                    <li class="mb-1">Spearheaded daily operations, stakeholder communications, and risk mitigation across cross functional development teams and customer support (call center agents, service designers, IRS stakeholders) to ensure quality delivery to taxpayers.</li>
-                    <li class="mb-1">Conducted market research on AI chatbots, assessed IRS and Direct File’s ability to support an AI chatbot while ensuring user experience would not suffer.</li>
-                </ul>
-            </div>
-
-            <!-- Experience Item: Office of Evaluation Sciences - Program Management Specialist -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Program Management Specialist</h3>
-                <p class="text-lg text-gray-600">Office of Evaluation Sciences | May 2019 - March 2020</p>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li class="mb-1">Developed, launched, and implemented a financial reimbursable model based on an examination of 5 years of salary history to ensure financial stability.</li>
-                    <li class="mb-1">Recommended process improvements to senior leadership regarding the financial stability, effectiveness and efficiency of administrative procedures.</li>
-                </ul>
-            </div>
-
-            <!-- Experience Item: 18F - Acquisition Innovation Specialist -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Acquisition Innovation Specialist</h3>
-                <p class="text-lg text-gray-600">18F | December 2015 - May 2019</p>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li class="mb-1">Assisted with the acquisition of digital services during the entire procurement lifecycle.</li>
-                    <li class="mb-1">Led Request for Quote (RFQ) ghostwriting efforts.</li>
-                    <li class="mb-1">Helped partner agencies shape their acquisition documents to reflect the leading industry practices in digital services.</li>
-                </ul>
-            </div>
-
-            <!-- Experience Item: Peace Corps, Guinea, West Africa - Public Health Educator -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Public Health Educator</h3>
-                <p class="text-lg text-gray-600">Peace Corps, Guinea, West Africa | December 2013 – October 2014</p>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li class="mb-1">Identified and collaborated with key community health agents, partners, and stakeholders to deliver public health education.</li>
-                    <li class="mb-1">Conducted human centered needs assessments to analyze and present community priorities to government stakeholders.</li>
-                    <li class="mb-1">Collaborated with local health agents, community leaders, and government officials to lead public health initiatives and project development based on community priorities.</li>
-                    <li class="mb-1">Partnered with Guinean NGOs to deliver key community programs, including securing and distributing 400+ pairs of shoes for a national Double Dutch initiative and 450 books for a new community library.</li>
-                    <li class="mb-1">Organized and led community health events focused on malaria prevention, handwashing, and vaccination awareness, including an educational outreach reaching over 1,000 residents.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Education & Training Section -->
-        <section id="education" class="mb-16 bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Education & Training</h2>
-
-            <!-- Education Item: Gonzaga University -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Bachelor of Arts; International Relations</h3>
-                <p class="text-lg text-gray-600">Gonzaga University, Spokane, WA</p>
-                <p class="text-md text-gray-700">Minors: Political Science and Spanish. Study abroad: Cuernavaca, Mexico.</p>
-            </div>
-
-            <!-- Training Item: Certified Scrum Master (CSM) -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Certified Scrum Master (CSM)</h3>
-                <p class="text-lg text-gray-600">Scrum Alliance | December 2021</p>
-            </div>
-
-            <!-- Training Item: Flawless Consulting -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Flawless Consulting</h3>
-                <p class="text-lg text-gray-600">Designed Learning | March 2019</p>
-            </div>
-
-            <!-- Training Item: Design Research Techniques & Service Design -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Design Research Techniques & Service Design</h3>
-                <p class="text-lg text-gray-600">Cooper Professional Ed. | Fall 2018</p>
-            </div>
-
-            <!-- Training Item: Managing for Racial Equity, Inclusion, and Results -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Managing for Racial Equity, Inclusion, and Results</h3>
-                <p class="text-lg text-gray-600">The Management Center | May 2018</p>
-            </div>
-
-            <!-- Training Item: Front End Web Development -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Front End Web Development</h3>
-                <p class="text-lg text-gray-600">General Assembly | Fall 2017</p>
-            </div>
-
-            <!-- Training Item: Certified Scrum Product Owner (CSPO) -->
-            <div class="mb-8 border-l-4 border-blue-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-800">Certified Scrum Product Owner (CSPO)</h3>
-                <p class="text-lg text-gray-600">Scrum Alliance | June 2016</p>
-            </div>
-        </section>
-
-        <!-- Skills & Tools Section -->
-        <section id="skills" class="mb-16 bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Skills & Tools</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Skill Category: Strategic Product Leadership -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Strategic Product Leadership</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Vision and roadmap development</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Business architecture</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Organizational change management</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Financial oversight</li>
-                    </ul>
-                </div>
-                <!-- Skill Category: Stakeholder & Customer Engagement -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Stakeholder & Customer Engagement</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Executive facilitation</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Principal customer liaison</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Cross-functional collaboration</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Business case development</li>
-                    </ul>
-                </div>
-                <!-- Skill Category: Product Delivery & Innovation -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Product Delivery & Innovation</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Agile/SAFe delivery</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Human-centered design</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Business requirement analysis</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Problem-solving</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Iterative delivery</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Emerging tech strategy (AI/ML, DevSecOps, APIs)</li>
-                    </ul>
-                </div>
-                <!-- Skill Category: CX & Process Optimization -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-3">CX & Process Optimization</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Customer journey mapping</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Metrics-based performance tracking</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Process reengineering</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Benchmarking and best practices</li>
-                    </ul>
-                </div>
-                <!-- Tools: Project Management -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Project Management Tools</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Trello</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Jira</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Github Projects</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Airtable</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Smartsheets</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> CRM tools</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> GSuite</li>
-                    </ul>
-                </div>
-                <!-- Tools: Development & Design -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Development & Design Tools</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Confluence</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Terminal</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Markdown</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> HTML</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> CSS</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Javascript</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Figma</li>
-                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10003;</span> Mural</li>
-                    </ul>
+    <main id="main-content">
+        <section id="about" class="usa-hero">
+            <div class="grid-container">
+                <div class="usa-hero__callout">
+                    <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">Strategic Product and Portfolio Leader</span>Rebecca Refoy</h1>
+                    <p>Over 10 years of experience translating ambiguity and business needs into actionable, human-centered strategies and roadmaps in complex, regulated environments.</p>
+                    <a class="usa-button" href="#contact">Get in Touch</a>
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="mb-16 bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Get in Touch</h2>
-            <p class="text-lg leading-relaxed text-gray-700 mb-8">
-                I'm always open to new opportunities and collaborations. Feel free to reach out to me via email or connect on social media!
-            </p>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                <a href="mailto:rrefoy@gmail.com" class="flex items-center bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 transition duration-300 ease-in-out shadow-md hover:shadow-lg">
-                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                    rrefoy@gmail.com
-                </a>
-                <div class="flex space-x-6">
-                    <!-- LinkedIn - Assuming a LinkedIn profile exists for Rebecca Refoy -->
-                    <a href="https://linkedin.com/in/rebecca-refoy" target="_blank" class="text-blue-700 hover:text-blue-900 transition duration-300 ease-in-out">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.36 3.029-3.268 3.029 0v5.604h-.029zm0-8.913c0-.986-1.09-2.029-2.883-2.029-1.748 0-3.117 1.082-3.117 2.029v.913h6z" clip-rule="evenodd" /></svg>
-                    </a>
-                    <!-- GitHub - Assuming a GitHub profile exists for Rebecca Refoy -->
-                    <a href="https://github.com/rrefoy" target="_blank" class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.499.09.682-.217.682-.483 0-.237-.008-.865-.013-1.7c-2.782.6-3.369-1.341-3.369-1.341-.454-1.156-1.11-1.464-1.11-1.464-.908-.618.069-.607.069-.607 1.004.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.834.091-.647.35-1.089.635-1.337-2.22-.253-4.555-1.113-4.555-4.953 0-1.096.392-1.996 1.03-2.7-.104-.253-.448-1.274.098-2.678 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.404.202 2.425.096 2.678.64.704 1.028 1.604 1.028 2.7 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.419-.012 2.747 0 .268.18.577.688.481C21.137 20.21 24 16.452 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd" /></svg>
-                    </a>
+        <section id="experience" class="grid-container usa-section">
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-12">
+                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Experience</h2>
+                    <div class="usa-accordion">
+                        <h3 class="usa-accordion__heading">
+                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="exp1">18F, General Services Administration (GSA)</button>
+                        </h3>
+                        <div id="exp1" class="usa-accordion__content usa-prose">
+                            <p><strong>Digital Transformation Program Lead | GS-15 | October 2022 - Present</strong></p>
+                            <ul>
+                                <li>Led business development and capture for a $20M+ portfolio of digital modernization projects with federal agencies.</li>
+                                <li>Coached and mentored a team of 10 project leads and digital service specialists.</li>
+                            </ul>
+                        </div>
+                        <h3 class="usa-accordion__heading">
+                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="exp2">Internal Revenue Service (IRS)</button>
+                        </h3>
+                        <div id="exp2" class="usa-accordion__content usa-prose">
+                            <p><strong>Project Lead and Delivery Manager | GS-14 | October 2021 - October 2022</strong></p>
+                            <ul>
+                                <li>Led the launch of a new, mobile-first tax filing system for the 2022 tax season.</li>
+                                <li>Managed a cross-functional team of 20+ engineers, designers, and researchers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-12">
+                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Education & Training</h2>
+                    <div class="usa-accordion">
+                        <h3 class="usa-accordion__heading">
+                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="edu1">Gonzaga University</button>
+                        </h3>
+                        <div id="edu1" class="usa-accordion__content usa-prose">
+                            <p><strong>Bachelor of Arts, International Relations</strong></p>
+                        </div>
+                        <h3 class="usa-accordion__heading">
+                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="edu2">Certifications</button>
+                        </h3>
+                        <div id="edu2" class="usa-accordion__content usa-prose">
+                            <ul>
+                                <li>Certified Scrum Master (CSM)</li>
+                                <li>Certified Scrum Product Owner (CSPO)</li>
+                                <li>FAC-P/PM Level III</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
+        <section id="skills" class="usa-section usa-section--light">
+            <div class="grid-container">
+                <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Skills & Tools</h2>
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-4">
+                        <div class="usa-card">
+                            <div class="usa-card__container">
+                                <div class="usa-card__header">
+                                    <h3 class="usa-card__heading">Strategic Product Leadership</h3>
+                                </div>
+                                <div class="usa-card__body">
+                                    <p>Product Vision & Strategy, Portfolio & Program Management, Business Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4">
+                        <div class="usa-card">
+                            <div class="usa-card__container">
+                                <div class="usa-card__header">
+                                    <h3 class="usa-card__heading">Stakeholder & Customer Engagement</h3>
+                                </div>
+                                <div class="usa-card__body">
+                                    <p>Customer Experience (CX), User Research, Stakeholder Management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4">
+                        <div class="usa-card">
+                            <div class="usa-card__container">
+                                <div class="usa-card__header">
+                                    <h3 class="usa-card__heading">Product Delivery & Innovation</h3>
+                                </div>
+                                <div class="usa-card__body">
+                                    <p>Agile & Scrum, Lean, Human-Centered Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="grid-container usa-section">
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-12">
+                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Get in Touch</h2>
+                    <p class="usa-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                    <a href="mailto:rebecca.refoy@email.com" class="usa-button">rebecca.refoy@email.com</a>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white p-6 text-center text-sm">
-        <div class="container mx-auto">
-            <p>&copy; 2025 Rebecca Refoy. All rights reserved.</p>
-            <p class="mt-2">Designed with <span class="text-red-500">&hearts;</span> using HTML and Tailwind CSS.</p>
+    <footer class="usa-footer">
+        <div class="grid-container usa-footer__return-to-top">
+            <a href="#">Return to top</a>
+        </div>
+        <div class="usa-footer__primary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-8">
+                        <nav class="usa-footer__nav" aria-label="Footer navigation">
+                            <ul class="grid-row grid-gap-2">
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                    <a class="usa-footer__primary-link" href="#about">About</a>
+                                </li>
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                    <a class="usa-footer__primary-link" href="#experience">Experience</a>
+                                </li>
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                    <a class="usa-footer__primary-link" href="#skills">Skills & Tools</a>
+                                </li>
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                    <a class="usa-footer__primary-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="usa-footer__secondary-section">
+            <div class="grid-container">
+                <div class="usa-footer__logo grid-row grid-gap-2">
+                    <div class="grid-col-auto">
+                        <p class="usa-footer__logo-text">Rebecca Refoy</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-
+    <script src="https://designsystem.digital.gov/assets/uswds/js/uswds.min.js"></script>
 </body>
 </html>
