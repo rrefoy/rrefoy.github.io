@@ -144,8 +144,29 @@ body {
     padding: 6rem 0;
 }
 
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
 .hero-content {
     max-width: 680px;
+    flex: 1;
+}
+
+.hero-photo {
+    flex-shrink: 0;
+}
+
+.hero-photo img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .hero-label {
@@ -381,6 +402,30 @@ body {
     margin-top: auto;
 }
 
+/* === Tools Bar === */
+.tools-bar {
+    margin-top: 2rem;
+    background: #fff;
+    border: 1px solid #e8ecf2;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+}
+
+.tools-bar h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2d5daa;
+    margin-bottom: 0.5rem;
+}
+
+.tools-bar p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* === Contact === */
 .contact-section {
     text-align: center;
@@ -393,6 +438,18 @@ body {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-location {
+    color: #777;
+    font-size: 0.95rem;
 }
 
 /* === Footer === */
@@ -467,6 +524,17 @@ body {
 
     .hero {
         padding: 4rem 0;
+    }
+
+    .hero-layout {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .hero-photo img {
+        width: 200px;
+        height: 200px;
     }
 
     .hero h1 {
