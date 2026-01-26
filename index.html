@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebecca Refoy - Personal Portfolio</title>
-    <link rel="stylesheet" href="assets/css/uswds.min.css">
-    <script src="assets/js/uswds-init.min.js"></script>
+    <title>Rebecca Refoy - Strategic Product &amp; Portfolio Leader</title>
+    <meta name="description" content="Rebecca Refoy - Strategic Product and Portfolio Leader with 10+ years of experience in product strategy, digital transformation, and human-centered design in complex, regulated environments.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rebecca Refoy - Strategic Product & Portfolio Leader">
+    <meta property="og:description" content="10+ years of experience translating ambiguity and business needs into actionable, human-centered strategies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rrefoy.github.io">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Rebecca Refoy - Strategic Product & Portfolio Leader">
+    <meta name="twitter:description" content="10+ years of experience translating ambiguity and business needs into actionable, human-centered strategies.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>R</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-    <div class="usa-overlay"></div>
-    <header class="usa-header usa-header--basic">
-        <div class="usa-nav-container">
-            <div class="usa-navbar">
-                <div class="usa-logo" id="basic-logo">
-                    <em class="usa-logo__text"><a href="#" title="Home" aria-label="Home">Rebecca Refoy</a></em>
-                </div>
-                <button type="button" class="usa-menu-btn">Menu</button>
-            </div>
-            <nav aria-label="Primary navigation" class="usa-nav">
-                <button type="button" class="usa-nav__close"><img src="assets/img/usa-icons/close.svg" role="img" alt="Close"></button>
-                <ul class="usa-nav__primary usa-accordion">
-                    <li class="usa-nav__primary-item">
-                        <a class="usa-nav__link" href="#about"><span>About</span></a>
-                    </li>
-                    <li class="usa-nav__primary-item">
-                        <a class="usa-nav__link" href="#experience"><span>Experience</span></a>
-                    </li>
-                    <li class="usa-nav__primary-item">
-                        <a class="usa-nav__link" href="#skills"><span>Skills & Tools</span></a>
-                    </li>
-                    <li class="usa-nav__primary-item">
-                        <a class="usa-nav__link" href="#blog"><span>Blog</span></a>
-                    </li>
-                    <li class="usa-nav__primary-item">
-                        <a class="usa-nav__link" href="#contact"><span>Contact</span></a>
-                    </li>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Home">Rebecca Refoy</a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+            <nav aria-label="Primary navigation" class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main id="main-content">
-        <section id="about" class="usa-hero">
-            <div class="grid-container">
-                <div class="usa-hero__callout">
-                    <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">Strategic Product and Portfolio Leader</span>Rebecca Refoy</h1>
-                    <p>Over 10 years of experience translating ambiguity and business needs into actionable, human-centered strategies and roadmaps in complex, regulated environments.</p>
-                    <a class="usa-button" href="#contact">Get in Touch</a>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-label">Strategic Product &amp; Portfolio Leader</p>
+                    <h1>Rebecca Refoy</h1>
+                    <p class="hero-description">Over 10 years of experience translating ambiguity and business needs into actionable, human-centered strategies and roadmaps in complex, regulated environments.</p>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
                 </div>
             </div>
         </section>
-        <section id="experience" class="grid-container usa-section">
-            <div class="grid-row grid-gap">
-                <div class="tablet:grid-col-12">
-                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Experience</h2>
-                    <div class="usa-accordion">
-                        <h3 class="usa-accordion__heading">
-                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="exp1">18F, General Services Administration (GSA)</button>
-                        </h3>
-                        <div id="exp1" class="usa-accordion__content usa-prose">
-                            <p><strong>Digital Transformation Program Lead | GS-15 | October 2022 - Present</strong></p>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>18F, General Services Administration (GSA)</h3>
+                            <p class="timeline-meta">Digital Transformation Program Lead &middot; GS-15 &middot; Oct 2022 &ndash; Present</p>
                             <ul>
                                 <li>Led business development and capture for a $20M+ portfolio of digital modernization projects with federal agencies.</li>
                                 <li>Coached and mentored a team of 10 project leads and digital service specialists.</li>
                             </ul>
                         </div>
-                        <h3 class="usa-accordion__heading">
-                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="exp2">Internal Revenue Service (IRS)</button>
-                        </h3>
-                        <div id="exp2" class="usa-accordion__content usa-prose">
-                            <p><strong>Project Lead and Delivery Manager | GS-14 | October 2021 - October 2022</strong></p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Internal Revenue Service (IRS)</h3>
+                            <p class="timeline-meta">Project Lead and Delivery Manager &middot; GS-14 &middot; Oct 2021 &ndash; Oct 2022</p>
                             <ul>
                                 <li>Led the launch of a new, mobile-first tax filing system for the 2022 tax season.</li>
                                 <li>Managed a cross-functional team of 20+ engineers, designers, and researchers.</li>
@@ -77,179 +87,118 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid-row grid-gap">
-                <div class="tablet:grid-col-12">
-                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Education & Training</h2>
-                    <div class="usa-accordion">
-                        <h3 class="usa-accordion__heading">
-                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="edu1">Gonzaga University</button>
-                        </h3>
-                        <div id="edu1" class="usa-accordion__content usa-prose">
-                            <p><strong>Bachelor of Arts, International Relations</strong></p>
-                        </div>
-                        <h3 class="usa-accordion__heading">
-                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="edu2">Certifications</button>
-                        </h3>
-                        <div id="edu2" class="usa-accordion__content usa-prose">
-                            <ul>
-                                <li>Certified Scrum Master (CSM)</li>
-                                <li>Certified Scrum Product Owner (CSPO)</li>
-                                <li>FAC-P/PM Level III</li>
-                            </ul>
-                        </div>
+
+                <h2 class="section-title" style="margin-top: 3rem;">Education &amp; Certifications</h2>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <h3>Gonzaga University</h3>
+                        <p>Bachelor of Arts, International Relations</p>
+                    </div>
+                    <div class="edu-card">
+                        <h3>Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Certified Scrum Master (CSM)</li>
+                            <li>Certified Scrum Product Owner (CSPO)</li>
+                            <li>FAC-P/PM Level III</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="skills" class="usa-section usa-section--light">
-            <div class="grid-container">
-                <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Skills & Tools</h2>
-                <div class="grid-row grid-gap">
-                    <div class="tablet:grid-col-4">
-                        <div class="usa-card">
-                            <div class="usa-card__container">
-                                <div class="usa-card__header">
-                                    <h3 class="usa-card__heading">Strategic Product Leadership</h3>
-                                </div>
-                                <div class="usa-card__body">
-                                    <p>Product Vision & Strategy, Portfolio & Program Management, Business Development</p>
-                                </div>
-                            </div>
-                        </div>
+
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Skills &amp; Tools</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">&#9881;</div>
+                        <h3>Strategic Product Leadership</h3>
+                        <p>Product Vision &amp; Strategy, Portfolio &amp; Program Management, Business Development</p>
                     </div>
-                    <div class="tablet:grid-col-4">
-                        <div class="usa-card">
-                            <div class="usa-card__container">
-                                <div class="usa-card__header">
-                                    <h3 class="usa-card__heading">Stakeholder & Customer Engagement</h3>
-                                </div>
-                                <div class="usa-card__body">
-                                    <p>Customer Experience (CX), User Research, Stakeholder Management</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">&#9734;</div>
+                        <h3>Stakeholder &amp; Customer Engagement</h3>
+                        <p>Customer Experience (CX), User Research, Stakeholder Management</p>
                     </div>
-                    <div class="tablet:grid-col-4">
-                        <div class="usa-card">
-                            <div class="usa-card__container">
-                                <div class="usa-card__header">
-                                    <h3 class="usa-card__heading">Product Delivery & Innovation</h3>
-                                </div>
-                                <div class="usa-card__body">
-                                    <p>Agile & Scrum, Lean, Human-Centered Design</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">&#9889;</div>
+                        <h3>Product Delivery &amp; Innovation</h3>
+                        <p>Agile &amp; Scrum, Lean, Human-Centered Design</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="blog" class="grid-container usa-section">
-            <div class="grid-row grid-gap">
-                <div class="tablet:grid-col-12">
-                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Blog</h2>
-                    <div class="grid-row grid-gap">
-                        <div class="tablet:grid-col-4">
-                            <div class="usa-card">
-                                <div class="usa-card__container">
-                                    <div class="usa-card__header">
-                                        <h3 class="usa-card__heading">A federal guide to de-risk government technology projects</h3>
-                                    </div>
-                                    <div class="usa-card__body">
-                                        <p>An overview of strategies for mitigating risks in government tech projects.</p>
-                                    </div>
-                                    <div class="usa-card__footer">
-                                        <a href="https://blog.18f.org/2020/09/09/a-federal-guide-to-de-risk-government-technology-projects/" class="usa-button">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tablet:grid-col-4">
-                            <div class="usa-card">
-                                <div class="usa-card__container">
-                                    <div class="usa-card__header">
-                                        <h3 class="usa-card__heading">An Acquisition Retrospective</h3>
-                                    </div>
-                                    <div class="usa-card__body">
-                                        <p>A look back at the lessons learned from the agile acquisition process.</p>
-                                    </div>
-                                    <div class="usa-card__footer">
-                                        <a href="https://blog.18f.org/2020/03/18/an-acquisition-retrospective/" class="usa-button">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tablet:grid-col-4">
-                            <div class="usa-card">
-                                <div class="usa-card__container">
-                                    <div class="usa-card__header">
-                                        <h3 class="usa-card__heading">What we learned from building a pool of agile vendors</h3>
-                                    </div>
-                                    <div class="usa-card__body">
-                                        <p>Insights from the process of creating a qualified pool of agile vendors.</p>
-                                    </div>
-                                    <div class="usa-card__footer">
-                                        <a href="https://blog.18f.org/2018/07/26/what-we-learned-from-building-a-pool-of-agile-vendors/" class="usa-button">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title">Blog</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>A federal guide to de-risk government technology projects</h3>
+                        <p>An overview of strategies for mitigating risks in government tech projects.</p>
+                        <a href="https://18f.gsa.gov/2020/09/09/a-federal-guide-to-de-risk-government-technology-projects/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>An Acquisition Retrospective</h3>
+                        <p>A look back at the lessons learned from the agile acquisition process.</p>
+                        <a href="https://18f.gsa.gov/2020/03/18/an-acquisition-retrospective/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>What we learned from building a pool of agile vendors</h3>
+                        <p>Insights from the process of creating a qualified pool of agile vendors.</p>
+                        <a href="https://18f.gsa.gov/2018/07/26/what-we-learned-from-building-a-pool-of-agile-vendors/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="grid-container usa-section">
-            <div class="grid-row grid-gap">
-                <div class="tablet:grid-col-12">
-                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Get in Touch</h2>
-                    <p class="usa-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-                    <a href="mailto:rebecca.refoy@email.com" class="usa-button">rebecca.refoy@email.com</a>
-                </div>
+
+        <section id="contact" class="section section-alt">
+            <div class="container contact-section">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <a href="mailto:rebecca.refoy@email.com" class="btn btn-primary">rebecca.refoy@email.com</a>
             </div>
         </section>
     </main>
-    <footer class="usa-footer">
-        <div class="grid-container usa-footer__return-to-top">
-            <a href="#">Return to top</a>
-        </div>
-        <div class="usa-footer__primary-section">
-            <div class="grid-container">
-                <div class="grid-row grid-gap">
-                    <div class="tablet:grid-col-8">
-                        <nav class="usa-footer__nav" aria-label="Footer navigation">
-                            <ul class="grid-row grid-gap-2">
-                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                    <a class="usa-footer__primary-link" href="#about">About</a>
-                                </li>
-                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                    <a class="usa-footer__primary-link" href="#experience">Experience</a>
-                                </li>
-                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                    <a class="usa-footer__primary-link" href="#skills">Skills & Tools</a>
-                                </li>
-                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                    <a class="usa-footer__primary-link" href="#blog">Blog</a>
-                                </li>
-                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                    <a class="usa-footer__primary-link" href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="usa-footer__secondary-section">
-            <div class="grid-container">
-                <div class="usa-footer__logo grid-row grid-gap-2">
-                    <div class="grid-col-auto">
-                        <p class="usa-footer__logo-text">Rebecca Refoy</p>
-                    </div>
-                </div>
-            </div>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav aria-label="Footer navigation" class="footer-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2025 Rebecca Refoy</p>
         </div>
     </footer>
-    <script src="assets/js/uswds.min.js"></script>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('#main-nav');
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            mainNav.classList.toggle('open');
+        });
+
+        // Close mobile menu on nav link click
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                mainNav.classList.remove('open');
+            });
+        });
+
+        // Sticky header shadow on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
 </body>
 </html>
