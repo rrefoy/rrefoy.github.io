@@ -273,46 +273,56 @@ body {
 
 /* === Services Section === */
 .services-intro {
-    max-width: 800px;
-    margin-bottom: 3rem;
+    max-width: 720px;
+    margin-bottom: 2.5rem;
 }
 
 .services-intro p {
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: #444;
 }
 
 .audience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.25rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card-icon {
+    color: #2d5daa;
+    margin-bottom: 0.75rem;
+}
+
+.card-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 .audience-card {
     background: #f8f9fb;
     border: 1px solid #e8ecf2;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.25rem;
 }
 
 .audience-card h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #1a1a2e;
     margin-bottom: 0.5rem;
 }
 
 .audience-card p {
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.5;
+    margin: 0;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
@@ -320,16 +330,16 @@ body {
     background: #fff;
     border: 1px solid #e8ecf2;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1.75rem;
     position: relative;
 }
 
 .service-number {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 32px;
-    height: 32px;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 28px;
+    height: 28px;
     background: #2d5daa;
     color: #fff;
     border-radius: 50%;
@@ -337,68 +347,70 @@ body {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .service-card h4 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: #1a1a2e;
-    margin-bottom: 0.75rem;
-    padding-right: 2.5rem;
+    margin-bottom: 0.5rem;
+    padding-right: 2rem;
 }
 
 .service-card > p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #555;
     line-height: 1.6;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .proof-points {
     background: #f8f9fb;
     border-radius: 6px;
-    padding: 1rem 1.25rem;
+    padding: 0.875rem 1rem;
+    border-left: 3px solid #2d5daa;
 }
 
 .proof-label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #2d5daa;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
 }
 
 .proof-points p:last-child {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
 }
 
 .principles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
 .principle {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem 0.5rem;
 }
 
 .principle h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: #1a1a2e;
+    color: #2d5daa;
     margin-bottom: 0.5rem;
 }
 
 .principle p {
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /* === Timeline === */
@@ -560,30 +572,6 @@ body {
     margin-top: auto;
 }
 
-/* === Tools Bar === */
-.tools-bar {
-    margin-top: 2rem;
-    background: #fff;
-    border: 1px solid #e8ecf2;
-    border-radius: 10px;
-    padding: 1.5rem 2rem;
-}
-
-.tools-bar h3 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #2d5daa;
-    margin-bottom: 0.5rem;
-}
-
-.tools-bar p {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
 /* === Contact === */
 .contact-section {
     text-align: center;
@@ -649,6 +637,16 @@ body {
 }
 
 /* === Responsive === */
+@media (max-width: 1024px) {
+    .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .principles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -715,7 +713,21 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .principle {
+        text-align: left;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #e8ecf2;
+    }
+
+    .principle:last-child {
+        border-bottom: none;
+    }
+
     .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edu-grid {
         grid-template-columns: 1fr;
     }
 }
