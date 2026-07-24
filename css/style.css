@@ -546,30 +546,6 @@ body {
     margin-top: auto;
 }
 
-/* === Tools Bar === */
-.tools-bar {
-    margin-top: 2rem;
-    background: #fff;
-    border: 1px solid #e8ecf2;
-    border-radius: 10px;
-    padding: 1.5rem 2rem;
-}
-
-.tools-bar h3 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #2d5daa;
-    margin-bottom: 0.5rem;
-}
-
-.tools-bar p {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
 /* === Contact === */
 .contact-section {
     text-align: center;
