@@ -255,6 +255,22 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* === About Section === */
+.about-content {
+    max-width: 720px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 1.25rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* === Services Section === */
 .services-intro {
     max-width: 800px;
