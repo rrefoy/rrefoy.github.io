@@ -334,19 +334,26 @@ body {
     position: relative;
 }
 
-.service-icon {
-    color: #2d5daa;
-    margin-bottom: 0.75rem;
-}
-
-.service-icon svg {
+.service-number {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
     width: 28px;
     height: 28px;
+    background: #2d5daa;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
 .service-card h4 {
     font-size: 1.05rem;
     font-weight: 600;
+    padding-right: 2rem;
     color: #1a1a2e;
     margin-bottom: 0.5rem;
 }
