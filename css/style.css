@@ -271,6 +271,26 @@ body {
     margin-bottom: 0;
 }
 
+.about-photo {
+    margin: 2rem 0;
+    max-width: 100%;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
 /* === Services Section === */
 .services-intro {
     max-width: 720px;
