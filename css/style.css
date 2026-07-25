@@ -352,20 +352,21 @@ body {
     position: relative;
 }
 
-.service-number {
+.service-icon {
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
-    width: 28px;
-    height: 28px;
-    background: #2d5daa;
-    color: #fff;
-    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    color: #2d5daa;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 0.8rem;
+}
+
+.service-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 .service-card h4 {
