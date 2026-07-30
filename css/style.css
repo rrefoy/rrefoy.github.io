@@ -559,4 +559,8 @@ body {
     .content-photo img {
         max-width: 100%;
     }
+
+    .edu-grid {
+        grid-template-columns: 1fr;
+    }
 }
