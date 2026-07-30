@@ -29,60 +29,329 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="home">
+<body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="page-wrapper">
-        <header class="site-header">
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Home">Rebecca Refoy</a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+            <nav aria-label="Primary navigation" class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero">
             <div class="container">
-                <div class="header-top">
-                    <a href="/" class="logo">Rebecca Refoy</a>
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <p class="hero-label">Delivery &amp; Acquisitions Consulting for Public Sector Technology</p>
+                        <h1>Rebecca Refoy</h1>
+                        <p class="hero-description">I help government agencies and mission-driven organizations get complicated public-service technology work actually delivered &mdash; not just planned, designed, or contracted for, but shipped, adopted, and sustained after the launch date passes.</p>
+                        <a href="#services" class="btn btn-primary">View Services</a>
+                    </div>
                     <div class="hero-photo">
-                        <img src="images/headshot.jpg?v=2" alt="Rebecca Refoy" width="175" height="175">
+                        <img src="images/headshot.jpg?v=2" alt="Rebecca Refoy" width="320" height="320">
                     </div>
                 </div>
-                <nav aria-label="Primary navigation" class="main-nav">
-                    <ul class="nav-list">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
-        </header>
+        </section>
 
-        <main id="main-content">
-            <section class="hero-minimal">
-                <div class="container">
-                    <h1>I help government agencies and mission-driven organizations <a href="work.html" class="accent-link">get complicated public-service technology work actually delivered</a> &mdash; not just planned, designed, or contracted for, but shipped, adopted, and sustained.</h1>
-
-                    <div class="hero-description">
-                        <p>I'm a delivery generalist who moves fluidly between strategy and execution: running programs, shaping acquisitions, building team capacity, and facilitating the human-centered work that makes services actually work for the people who depend on them.</p>
-                        <p>I approach problems with curiosity, build for scale, and lead with flexibility and purpose. I care deeply about doing this work in ways that are inclusive, psychologically safe, and give people back their time &mdash; because I believe that even small improvements to public services can meaningfully improve people's lives.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer">
+        <section id="about" class="section">
             <div class="container">
-                <p class="footer-copy">&copy; 2026 Rebecca Refoy</p>
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <p>I live in Washington, D.C. now, with my husband and two cats &mdash; a long way from the Pacific Northwest, where I grew up. I've spent my career trying to make government work better for the people who depend on it.</p>
+                    <p>Most recently, I led delivery for a Native-owned tribal health IT consultancy and a civic tech firm doing nonprofit research and strategy work &mdash; different clients, same throughline: the work only counts if it ships, gets adopted, and holds up after I leave.</p>
+                    <p>Before that, I spent a decade at 18F and GSA &mdash; first shaping how agencies buy digital services, then running delivery on some of the federal government's highest-stakes technology work, including IRS Direct File, the first tax filing system built and run by the IRS.</p>
+                    <p>That instinct goes back further, to the Peace Corps, in Guinea, West Africa, where I first learned to build programs around what communities actually needed rather than what looked good on paper.</p>
+                    <figure class="about-photo">
+                        <img src="images/peace-corps-korbe.jpg" alt="Rebecca Refoy with community leaders in Korb&eacute;, Guinea, during her Peace Corps service" loading="lazy">
+                        <figcaption>With community leaders in Korb&eacute;, Guinea, during my Peace Corps service.</figcaption>
+                    </figure>
+                    <p>In Korb&eacute;, trust wasn't something I earned in one meeting &mdash; it was built by showing up, again and again: learning enough Pular to greet people properly, sitting through meetings that started an hour late because that was how things actually worked, not how I expected them to. I learned to stop assuming I already knew what a community needed until I'd spent real time listening to people say so themselves. That's the same discipline I still bring to government and public-interest work now: show up consistently, build trust before proposing solutions, and say plainly when something isn't working instead of quietly moving on.</p>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+
+                <div class="services-intro">
+                    <p>Most consultancies specialize in one piece of the delivery chain: strategy, design, or engineering. I specialize in the piece that connects them &mdash; the delivery management, the vendor relationship, and the internal team capability that determine whether good ideas survive contact with a real government system.</p>
+                </div>
+
+                <h3 class="subsection-title">Who This Is For</h3>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+                        <h4>Agency Leaders</h4>
+                        <p>Who have the mandate and the budget to modernize a service, but need someone who can actually run the engagement day to day &mdash; not just advise from the outside.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div>
+                        <h4>Civic Tech Firms &amp; Prime Contractors</h4>
+                        <p>Who need a senior delivery lead or acquisitions-savvy partner to embed on a specific engagement.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
+                        <h4>Tribal, State &amp; Local Partners</h4>
+                        <p>Navigating complex, under-resourced systems (health IT, benefits, education) where the technology is rarely the hardest part.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+                        <h4>Nonprofits &amp; Foundations</h4>
+                        <p>Funding technology-enabled public services who need an outside read on whether an initiative is set up to succeed.</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title section-title-spaced">What I Offer</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-number">1</div>
+                        <h4>Delivery &amp; Program Management</h4>
+                        <p>Embedded or fractional delivery leadership for digital service engagements &mdash; risk management, cross-team alignment, milestone accountability, and the daily work of keeping a complex, multi-stakeholder project on track.</p>
+                        <div class="proof-points">
+                            <p class="proof-label">Proof Points</p>
+                            <p>Delivery Manager for IRS Direct File (140,000 pilot users, 80%+ increase in user trust, GSA's 2024 Customer Experience Award); led delivery across 7 product teams and 2 software platforms; managed $10M+ digital transformation portfolios at 18F.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">2</div>
+                        <h4>Team &amp; Capability Enablement</h4>
+                        <p>Building the internal muscle &mdash; standards, hiring, onboarding, and delivery norms &mdash; so an organization or team can keep running agile, human-centered practices after an engagement ends, rather than becoming dependent on outside help.</p>
+                        <div class="proof-points">
+                            <p class="proof-label">Proof Points</p>
+                            <p>As Chief Delivery Officer at LakeRaven LLC, built the organization's contractor handbook, HR documentation, job descriptions, onboarding checklists, and delivery standards while leading tribal health IT engagements.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">3</div>
+                        <h4>Agile Acquisitions &amp; Vendor De-risking</h4>
+                        <p>Translating between agile delivery practice and government procurement &mdash; writing and shaping RFQs, structuring performance-based contracts, and helping agencies buy and manage technology work in a way that supports iterative delivery.</p>
+                        <div class="proof-points">
+                            <p class="proof-label">Proof Points</p>
+                            <p>Co-editor of 18F's federal field guide to de-risking government technology; decade-long record of published writing on agile acquisitions; FAC-COR III certified; led RFQ ghostwriting and acquisition strategy for federal agencies.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">4</div>
+                        <h4>Service Design &amp; HCD Facilitation</h4>
+                        <p>Discovery, stakeholder mapping, and journey work that turns research into a plan leadership can actually act on &mdash; applying human-centered design methods (Discover, Decide, Make, Validate) without pretending to be a design specialist.</p>
+                        <div class="proof-points">
+                            <p class="proof-label">Proof Points</p>
+                            <p>Directed discovery and stakeholder research for statewide gap analysis engagements; has applied human-centered design methods since 2013, beginning in the Peace Corps in Guinea.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title section-title-spaced">How I Work</h3>
+                <div class="principles-grid">
+                    <div class="principle">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+                        <h4>Listen First</h4>
+                        <p>Every engagement starts with the people doing the work, not just the people who hired me.</p>
+                    </div>
+                    <div class="principle">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                        <h4>Make the Plan Visible</h4>
+                        <p>Findings only matter once they're something a whole group can see and agree on &mdash; a roadmap, a sequenced plan, a shared definition of success.</p>
+                    </div>
+                    <div class="principle">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                        <h4>Deliver, Don't Just Advise</h4>
+                        <p>I run the work, not just recommend it &mdash; milestones, risk management, and stakeholder alignment through to launch.</p>
+                    </div>
+                    <div class="principle">
+                        <div class="card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
+                        <h4>Leave It Working</h4>
+                        <p>The goal isn't dependency. Every engagement should leave the team with the standards, skills, and confidence to keep going without me.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>18F, General Services Administration (GSA)</h3>
+                            <p class="timeline-meta">Digital Program Manager &middot; Dec 2020 &ndash; Apr 2025</p>
+                            <ul>
+                                <li>Scoped digital service consulting engagements across multiple agencies; delivering digital transformation projects that improved critical public services.</li>
+                                <li>Led and partnered with agency executives to develop roadmaps for policy implementation, ensuring operational feasibility while balancing implementation constraints and user needs with stakeholder priorities.</li>
+                                <li>Directed cross-functional Agile/SAFe teams across concurrent digital initiatives, ensuring delivery visibility, proactive risk management, and on-time execution of critical milestones.</li>
+                                <li>Integrated human-centered design and behavioral insights to improve adoption of new services, particularly for underserved communities.</li>
+                                <li>Scoped and scaled multi-million-dollar digital transformation initiatives; managed $10M portfolios with on-time, in-scope delivery across complex vendor landscapes.</li>
+                                <li>Designed and implemented success metrics for operational improvements and public service launches using qualitative and quantitative methods.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>18F on behalf of the IRS</h3>
+                            <p class="timeline-meta">Delivery Manager &middot; Jun 2023 &ndash; Mar 2024</p>
+                            <ul>
+                                <li>Collaborated to launch the first-ever tax filing system built and run by the IRS, serving 140,000 users in pilot year, increasing trust in the IRS by over 80% in a survey of users.</li>
+                                <li>Oversaw program risk mitigation, stakeholder communications, and root cause analysis to resolve critical delivery issues.</li>
+                                <li>Led delivery strategy for the customer support team aligning product goals across two software products and 7 product teams.</li>
+                                <li>Ensured dignified, accessible user experience through iterative testing, stakeholder feedback, and service design integration.</li>
+                                <li>Evaluated GenAI use cases for digital service delivery, balancing trust, compliance, and technical feasibility to guide executive decision-making on emerging tech adoption.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Office of Evaluation Sciences, GSA</h3>
+                            <p class="timeline-meta">Program Management Specialist &middot; May 2019 &ndash; Mar 2020</p>
+                            <ul>
+                                <li>Developed, launched, and implemented a new financial sustainability model based on an examination of five years of salary history to ensure financial stability.</li>
+                                <li>Recommended process improvements to senior leadership regarding the financial stability, effectiveness, and efficiency of administrative procedures.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>18F, General Services Administration (GSA)</h3>
+                            <p class="timeline-meta">Acquisition Innovation Specialist &middot; Dec 2015 &ndash; May 2019</p>
+                            <ul>
+                                <li>Assisted with the acquisition of digital services during the procurement lifecycle. Led Request for Quote (RFQ) ghostwriting efforts.</li>
+                                <li>Helped partner agencies shape their acquisition documents to reflect leading industry practices in digital services.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Peace Corps &mdash; Guinea, West Africa</h3>
+                            <p class="timeline-meta">Public Health Educator &middot; Dec 2013 &ndash; Oct 2014</p>
+                            <ul>
+                                <li>Applied human-centered needs assessments to align government and NGO priorities with community needs, ensuring equitable and sustainable program outcomes.</li>
+                                <li>Partnered with local NGOs to deliver community programs: securing and distributing 400+ pairs of shoes for a Double Dutch initiative and 450 books for a new community library.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title section-title-spaced">Education, Training &amp; Awards</h2>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <h3>Gonzaga University</h3>
+                        <p>Bachelor of Arts, International Relations</p>
+                        <p>Minors: Political Science and Spanish</p>
+                        <p>Study abroad: Cuernavaca, Mexico</p>
+                    </div>
+                    <div class="edu-card">
+                        <h3>Awards</h3>
+                        <ul class="cert-list">
+                            <li>GSA's 2024 Customer Experience Award for contributions to IRS Direct File</li>
+                        </ul>
+                    </div>
+                    <div class="edu-card">
+                        <h3>Certifications &amp; Training</h3>
+                        <ul class="cert-list">
+                            <li>Certified Scrum Master (CSM) &mdash; 2021</li>
+                            <li>Certified Scrum Product Owner (CSPO) &mdash; 2016</li>
+                            <li>Flawless Consulting &mdash; Designed Learning, 2019</li>
+                            <li>Cooper Professional Education &mdash; Design Research &amp; Service Design, 2018</li>
+                            <li>The Management Center &mdash; Managing for Racial Equity, 2018</li>
+                            <li>General Assembly &mdash; Front-End Web Development, 2017</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Blog</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>A federal guide to de-risk government technology projects</h3>
+                        <p>An overview of strategies for mitigating risks in government tech projects.</p>
+                        <a href="https://blog.18f.org/2020/09/09/a-federal-guide-to-de-risk-government-technology-projects/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>An Acquisition Retrospective</h3>
+                        <p>A look back at the lessons learned from the agile acquisition process.</p>
+                        <a href="https://blog.18f.org/2020/03/18/an-acquisition-retrospective/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>What we learned from building a pool of agile vendors</h3>
+                        <p>Insights from the process of creating a qualified pool of agile vendors.</p>
+                        <a href="https://blog.18f.org/2018/07/26/what-we-learned-from-building-a-pool-of-agile-vendors/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-section">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="contact-details">
+                    <a href="mailto:rrefoy@gmail.com" class="btn btn-primary">rrefoy@gmail.com</a>
+                    <p class="contact-location">Washington, D.C.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav aria-label="Footer navigation" class="footer-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2026 Rebecca Refoy</p>
+        </div>
+    </footer>
 
     <script>
         // Mobile menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
-        const mainNav = document.querySelector('.main-nav');
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-                menuToggle.setAttribute('aria-expanded', !expanded);
-                mainNav.classList.toggle('open');
+        const mainNav = document.querySelector('#main-nav');
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            mainNav.classList.toggle('open');
+        });
+
+        // Close mobile menu on nav link click
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                mainNav.classList.remove('open');
             });
-        }
+        });
+
+        // Sticky header shadow on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        });
     </script>
 </body>
 </html>
