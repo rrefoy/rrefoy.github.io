@@ -88,7 +88,7 @@ body {
 .home .hero-photo {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -2rem;
 }
 
 .home .hero-photo img {
