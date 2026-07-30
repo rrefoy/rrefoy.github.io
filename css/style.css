@@ -81,19 +81,13 @@ body {
 }
 
 /* Hero photo on homepage */
-.home .site-header .container {
-    position: relative;
-}
-
 .home .hero-photo {
-    position: absolute;
-    top: 0;
-    right: -8rem;
+    margin-bottom: 1rem;
 }
 
 .home .hero-photo img {
-    width: 175px;
-    height: 175px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
@@ -127,11 +121,6 @@ body {
 .hero-minimal {
     flex: 1;
     padding: 1rem 0 4rem;
-}
-
-.home .hero-minimal h1,
-.home .hero-minimal .hero-description {
-    max-width: 480px;
 }
 
 .hero-minimal h1 {
@@ -570,15 +559,9 @@ body {
         align-items: flex-start;
     }
 
-    .home .hero-photo {
-        position: static;
-        order: -1;
-        margin-bottom: 1rem;
-    }
-
     .home .hero-photo img {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .nav-list {
