@@ -447,13 +447,32 @@ body {
     margin: 0;
 }
 
-/* === LinkedIn Section === */
-.linkedin-section {
-    margin-top: 1rem;
+/* === Posts Feed (Blog) === */
+.posts-feed {
+    margin-top: 2rem;
 }
 
-.linkedin-posts {
-    margin-top: 1.5rem;
+.posts-feed .post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+.posts-feed .post-item:last-child {
+    border-bottom: none;
+}
+
+/* === LinkedIn Embeds === */
+.linkedin-embed {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+.linkedin-embed iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
 }
 
 /* === Contact Page === */
