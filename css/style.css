@@ -88,7 +88,7 @@ body {
 .home .hero-photo {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -2rem;
 }
 
 .home .hero-photo img {
@@ -515,6 +515,31 @@ body {
 .text-muted {
     color: #888;
     font-size: 0.9rem;
+}
+
+/* === Buttons === */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #2d5daa;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1e4a8a;
+    text-decoration: none;
+}
+
+.resume-link {
+    margin-top: 2rem;
 }
 
 /* === Footer === */
