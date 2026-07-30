@@ -522,14 +522,17 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.btn-primary {
+.btn-primary,
+.prose .btn-primary {
     background-color: #4a7c6f;
     color: #fff;
     font-weight: 700;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.prose .btn-primary:hover {
     background-color: #3d6a5f;
+    color: #fff;
     text-decoration: none;
 }
 
