@@ -129,6 +129,11 @@ body {
     padding: 1rem 0 4rem;
 }
 
+.home .hero-minimal h1,
+.home .hero-minimal .hero-description {
+    max-width: 480px;
+}
+
 .hero-minimal h1 {
     font-size: 1.75rem;
     font-weight: 400;
