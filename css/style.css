@@ -81,13 +81,19 @@ body {
 }
 
 /* Hero photo on homepage */
+.home .site-header .container {
+    position: relative;
+}
+
 .home .hero-photo {
-    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .home .hero-photo img {
-    width: 140px;
-    height: 140px;
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
@@ -534,6 +540,7 @@ body {
     }
 
     .home .hero-photo {
+        position: static;
         order: -1;
         margin-bottom: 1rem;
     }
